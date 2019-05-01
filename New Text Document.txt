@@ -1,0 +1,363 @@
+                                                       Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ mk dir devops
+bash: mk: command not found
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ cd devops
+bash: cd: devops: No such file or directory
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ pwd
+/c/Users/Reddy/Desktop/git practice
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ ls
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ ls -a
+./  ../  .git/
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ ll
+total 0
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ touch qa
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ vi qa
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ cat qa
+hii
+devops folder name my desick top
+
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ https://github.com/yarapa/sunder.git
+bash: https://github.com/yarapa/sunder.git: No such file or directory
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ git clone https://github.com/yarapa/sunder.git
+Cloning into 'sunder'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (9/9), done.
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ ls
+qa  sunder/
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ ll
+total 5
+-rw-r--r-- 1 Reddy 197121 38 Apr 19 06:34 qa
+drwxr-xr-x 1 Reddy 197121  0 Apr 19 06:42 sunder/
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ ls
+qa  sunder/
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ cd ramu
+bash: cd: ramu: No such file or directory
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ ll
+total 5
+-rw-r--r-- 1 Reddy 197121 38 Apr 19 06:34 qa
+drwxr-xr-x 1 Reddy 197121  0 Apr 19 06:42 sunder/
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        qa
+        sunder/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ vi manu
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        manu
+        qa
+        sunder/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ git add .
+warning: LF will be replaced by CRLF in manu.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in qa.
+The file will have its original line endings in your working directory
+warning: adding embedded git repository: sunder
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> sunder
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached sunder
+hint:
+hint: See "git help submodule" for more information.
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   manu
+        new file:   qa
+        new file:   sunder
+
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ git commit -m "hii good morning kalyan"
+[master (root-commit) 17f3a2c] hii good morning kalyan
+ 3 files changed, 6 insertions(+)
+ create mode 100644 manu
+ create mode 100644 qa
+ create mode 160000 sunder
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ pwd
+/c/Users/Reddy/Desktop/git practice
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ ls
+manu  qa  sunder/
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice (master)
+$ cd sunder/
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice/sunder (master)
+$ ls
+ devcode  'Interview Questions or Learning Pega - 124 - Copy.docx'   README.md
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice/sunder (master)
+$ ls
+ devcode  'Interview Questions or Learning Pega - 124 - Copy.docx'   README.md
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice/sunder (master)
+$ touch filename
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice/sunder (master)
+$ vi filename
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice/sunder (master)
+$ cat filename
+jbvjfb fjdbj b
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice/sunder (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        filename
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice/sunder (master)
+$ git add .
+warning: LF will be replaced by CRLF in filename.
+The file will have its original line endings in your working directory
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice/sunder (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   filename
+
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice/sunder (master)
+$ git commit -m "added data"
+[master 11250bf] added data
+ 1 file changed, 1 insertion(+)
+ create mode 100644 filename
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice/sunder (master)
+$ git push
+fatal: unable to access 'https://github.com/yarapa/sunder.git/': Could not resolve host: github.com
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice/sunder (master)
+$ git push
+fatal: unable to access 'https://github.com/yarapa/sunder.git/': Could not resolve host: github.com
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice/sunder (master)
+$ history
+    1  ssh -i "Ansible.pem" ec2-user@ec2-13-59-37-222.us-east-2.compute.amazonaws.com
+    2  ssh -i "Ansible.pem" ec2-user@ec2-13-59-37-222.us-east-2.compute.amazonaws.com
+    3  ssh -i "Kubernetes.pem" ubuntu@ec2-13-250-40-192.ap-southeast-1.compute.amazonaws.com
+    4  ssh -i "Kubernetes.pem" ubuntu@ec2-13-250-40-192.ap-southeast-1.compute.amazonaws.com
+    5  ssh -i "Kube ----node.pem" ubuntu@ec2-13-229-127-96.ap-southeast-1.compute.amazonaws.com
+    6   sudo -i
+    7  sud - i
+    8  sudo - i
+    9  ssh -i "Kube ----node.pem" ubuntu@ec2-13-229-127-96.ap-southeast-1.compute.amazonaws.com
+   10  ssh -i "k8s master.pem" ubuntu@ec2-54-169-180-207.ap-southeast-1.compute.amazonaws.com
+   11  ssh -i "asia.pem" ubuntu@ec2-13-233-124-49.ap-south-1.compute.amazonaws.com
+   12  ssh -i "asia.pem" ubuntu@ec2-13-233-124-49.ap-south-1.compute.amazonaws.com
+   13  ssh -i "asia.pem" ubuntu@ec2-13-233-124-49.ap-south-1.compute.amazonaws.com
+   14  ssh -i "asia.pem" ubuntu@ec2-13-233-124-49.ap-south-1.compute.amazonaws.com
+   15  ssh -i "asia.pem" ec2-user@ec2-13-233-124-49.ap-south-1.compute.amazonaws.com
+   16  ssh -i "asia.pem" ec2-user@ec2-13-233-124-49.ap-south-1.compute.amazonaws.com
+   17  ssh -i "k93.pem" ubuntu@ec2-13-233-59-7.ap-south-1.compute.amazonaws.com
+   18  ssh -i "k93.pem" ubuntu@ec2-13-233-59-7.ap-south-1.compute.amazonaws.com
+   19  ssh -i "asia.pem" ubuntu@ec2-13-232-183-12.ap-south-1.compute.amazonaws.com
+   20  ssh -i "k87 large.pem" ubuntu@ec2-3-17-131-219.us-east-2.compute.amazonaws.com
+   21  ssh -i "k87 large.pem" ubuntu@ec2-3-17-131-219.us-east-2.compute.amazonaws.com
+   22  ssh -i "k87 large.pem" ubuntu@ec2-3-17-131-219.us-east-2.compute.amazonaws.com
+   23  ssh -i "k87 large.pem" ubuntu@ec2-3-17-131-219.us-east-2.compute.amazonaws.com
+   24  ssh -i "k87 large.pem" ubuntu@ec2-3-17-131-219.us-east-2.compute.amazonaws.com
+   25  ssh -i "k87 large.pem" ubuntu@ec2-3-17-131-219.us-east-2.compute.amazonaws.com
+   26  ssh -i "k87 large.pem" ubuntu@ec2-3-17-131-219.us-east-2.compute.amazonaws.com
+   27  ssh -i "k87 large.pem" ubuntu@ec2-3-17-131-219.us-east-2.compute.amazonaws.com
+   28  ssh -i "k87 large.pem" ubuntu@ec2-3-17-131-219.us-east-2.compute.amazonaws.com
+   29  ssh -i "k87 large.pem" ubuntu@ec2-18-218-255-146.us-east-2.compute.amazonaws.com
+   30  ssh -i "k82 large.pem" ubuntu@ec2-18-219-2-135.us-east-2.compute.amazonaws.com
+   31  ssh -i "k82 large.pem" ubuntu@ec2-18-219-2-135.us-east-2.compute.amazonaws.com
+   32  ssh -i "k82 large.pem" ubuntu@ec2-18-219-2-135.us-east-2.compute.amazonaws.com
+   33  ssh -i "k82 large.pem" ubuntu@ec2-18-219-2-135.us-east-2.compute.amazonaws.com
+   34  ssh -i "redh.pem" ec2-user@ec2-52-66-238-165.ap-south-1.compute.amazonaws.com
+   35  ssh -i "kuber.pem" ubuntu@ec2-13-233-195-193.ap-south-1.compute.amazonaws.com
+   36  ssh -i "redh.pem" ec2-user@ec2-13-233-193-4.ap-south-1.compute.amazonaws.com
+   37  ssh -i "kuber netes.pem" ubuntu@ec2-13-234-21-122.ap-south-1.compute.amazonaws.com
+   38  ssh -i "kkjdkdj.pem" ubuntu@ec2-3-0-20-122.ap-southeast-1.compute.amazonaws.com
+   39  ssh -i "redh.pem" ec2-user@ec2-13-233-103-18.ap-south-1.compute.amazonaws.com
+   40  ls
+   41  cd google-pakages/
+   42  ls
+   43  pom.xml
+   44  mvn clean
+   45  mvn compile
+   46  mvn test
+   47  mvn archetyc:genrate
+   48  'group id':com.google
+   49  mvn clean
+   50  exit
+   51  pwd
+   52  ls
+   53  exit
+   54  git config --globle user.email "kalyannaidu708@gmail.com"
+   55  ls
+   56  pwd
+   57  git --version
+   58  touch.index.html
+   59  touch index.html
+   60  touch app.js
+   61  git init
+   62  :q
+   63  mk dir
+   64  mk dir devops
+   65  cd devops
+   66  pwd
+   67  ls
+   68  ls -a
+   69  ll
+   70  touch qa
+   71  vi qa
+   72  cat qa
+   73  https://github.com/yarapa/sunder.git
+   74  git clone https://github.com/yarapa/sunder.git
+   75  ls
+   76  ll
+   77  ls
+   78  cd ramu
+   79  ll
+   80  git status
+   81  vi manu
+   82  git status
+   83  git add .
+   84  git status
+   85  git commit -m "hii good morning kalyan"
+   86  git push
+   87  git status
+   88  git push -u origin master
+   89  pwd
+   90  ls
+   91  cd sunder/
+   92  ls
+   93  ls
+   94  touch filename
+   95  vi filename
+   96  cat filename
+   97  git status
+   98  git add .
+   99  git status
+  100  git commit -m "added data"
+  101  git push
+  102  git push
+  103  history
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice/sunder (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 280 bytes | 93.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/yarapa/sunder.git
+   4db286e..11250bf  master -> master
+
+Reddy@DESKTOP-K8F7D23 MINGW64 ~/Desktop/git practice/sunder (master)
+$
